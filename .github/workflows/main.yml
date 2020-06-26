@@ -32,12 +32,13 @@ jobs:
     - name: github actions for yarn
       uses: Borales/actions-yarn@v2.1.0
       with:
-        cmd: instal
+        cmd: install
         
     - name: creating build
       run: yarn build
       
     - name: installing surge
       run: npm install -g surge
+      
     - name: deploying using surge 
-      run: surge ./ plain-idea.surge.sh --token ${{ secrets.REACT_KEY }}  
+      run: surge ./build http://plain-idea.surge.sh --token ${{secrets.REACT_KEY}}  
