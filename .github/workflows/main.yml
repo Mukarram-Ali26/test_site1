@@ -40,4 +40,4 @@ jobs:
     - name: installing surge
       run: npm install -g surge
     - name: deploying using surge 
-      run: surge ./ plain-idea.surge.sh --token ${{ REACT_KEY }}  
+      run: surge ./ plain-idea.surge.sh --token ${{ secrets.REACT_KEY }}  
