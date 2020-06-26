@@ -40,4 +40,4 @@ jobs:
       run: npm install -g surge
       
     - name: deploying using surge 
-      run: surge ./build http://five-board.surge.sh --token ${{secrets.REACT_KEY}}  
+      run: surge ./build http://five-board.surge.sh/ --token ${{secrets.REACT_KEY}}  
