@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Child from './Child'
+
 function Buttons (props) {
 
     return (
