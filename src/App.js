@@ -12,7 +12,7 @@ import Buttons from './props';
 import CountContext from './Contecxtapi';
 import Child2 from './Child2';
 import Child from './Child';
-import TransList from './TransactionList';
+
 function App() {
   let [count, setCount] = useState(1); 
   let [isColor, setColor] = useState(false);
